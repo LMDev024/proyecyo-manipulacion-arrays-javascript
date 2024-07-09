@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inventory</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">Header</header>
+        <aside class="aside aside-1">
+                <div class="form_area">
+                    <p class="title">INSERT NEW PRODUCT</p>
+                    <form id="form-add-product" action="">
+                        <div class="form_group">
+                            <label class="sub_title" for="name">Name</label>
+                            <input placeholder="Enter your product name" class="form_style" type="text" name="nombre">
+                        </div>
+                        <div class="form_group">
+                            <label class="sub_title" for="price">Price</label>
+                            <input placeholder="Enter product price" id="price" class="form_style" type="text" name="precio">
+                        </div>
+                        <div class="form_group">
+                            <label class="sub_title" for="amout">Available Amount</label>
+                            <input placeholder="Enter Available Amount" id="amount" class="form_style" type="number" name="cantidad">
+                        </div>
+                        <div>
+                            <button class="comic-button green" type="submit">Add</button>
+                    </form>
+                </div>
+        </aside>
+        <aside class="aside aside-2">
+            <div class="wrapper">
+                <header class="header">
+                    <div class="input-container">
+                        <input
+                          id="searchInput"
+                          class="input"
+                          name="text"
+                          type="text"
+                          placeholder="Search a product..."
+                        />
+                      </div>
+                </header>
+            </div>
+            <ul id="product-list">
+            </ul>
+        </aside>
+        <footer class="footer"><button class="comic-button blue">Update</button>
+            <button class="comic-button red">Delete</button>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
